@@ -14,7 +14,7 @@ export default function ItineraryPlanner() {
     setLoading(true);
     setResult('');
 
-    const prompt = Create a ${form.days}-day travel itinerary for ${form.destination} in Nepal. The total budget is ${form.budget}. Include sightseeing, cultural spots, local food, and rest days. Format it day-wise.;
+    const prompt = `Create a ${form.days}-day travel itinerary for ${form.destination} in Nepal. The total budget is ${form.budget}. Include sightseeing, cultural spots, local food, and rest days. Format it day-wise.`;
 
     try {
       const res = await fetch('/api/generate', {
