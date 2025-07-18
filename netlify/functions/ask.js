@@ -8,14 +8,15 @@ export default async function handler(req, res) {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: ⁠ Bearer ${process.env.OPENAI_API_KEY} ⁠,
       },
       body: JSON.stringify({
         model: 'gpt-3.5-turbo',
         messages: [
           {
             role: 'system',
-            content: 'You are a helpful travel assistant for tourists visiting Nepal. Answer with friendliness and expert-level local knowledge.',
+            content:
+              'You are a helpful travel assistant for tourists visiting Nepal. Answer with friendliness and expert-level local knowledge.',
           },
           {
             role: 'user',
